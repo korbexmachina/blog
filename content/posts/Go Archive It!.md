@@ -184,4 +184,5 @@ Overall, I'm super happy with how this went, if I were to make any technical cha
 The only bug I have noticed so far is that the program seems to struggle with directories that start with `.`, I intend to fix this before `v0.1.0`.
 
 That's all for now!
+
 -Korben
