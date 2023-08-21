@@ -38,7 +38,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     # telegram_url = "https://telegram.org"
     matrix_url = "https://matrix.to/#/@korbexmachina:matrix.org"
     # xmpp_url = "https://xmpp.org"
-    email_url = "mailto://contact@korbexmachina.com"
+    email_url = "mailto:contact@korbexmachina.com"
 
     # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
     rss_icon = true
