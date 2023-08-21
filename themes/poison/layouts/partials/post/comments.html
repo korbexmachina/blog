@@ -1,5 +1,4 @@
 <div class="comments">
-    {{ if .Site.Params.remark42 }}
     <script src="https://utteranc.es/client.js"
     repo="korbexmachina/blog"
     issue-term="pathname"
@@ -8,7 +7,4 @@
     crossorigin="anonymous"
     async>
     </script>
-    {{ else if .Site.DisqusShortname }}
-    {{ template "_internal/disqus.html" . }}
-    {{ end }}
 </div>
