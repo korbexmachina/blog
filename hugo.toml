@@ -1,4 +1,4 @@
-baseURL = "/blog"
+baseURL = "https://blog.korbexmachina.com"
 languageCode = "en-us"
 title = "Korben Tompkin"
 theme = "poison"
