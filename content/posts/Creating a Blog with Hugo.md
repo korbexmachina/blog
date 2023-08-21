@@ -8,6 +8,8 @@ description: My experience creating my blog site with Hugo.
 
 Honestly I kind of chose it on a whim. I was researching various static site generators, when I came across Hugo. Not only did it seem to fit my use case perfectly, it was written in my favourite language! After using Hugo for a while, I feel like I made the right choice. I have fought with it at times, but usually the answer was easy to find in the official documentation.
 
+## Notes
+
 This blog uses a theme called [Poison](https://github.com/lukeorth/poison), I found the configuration for this to be mostly straightforward. I am using [Utterences](https://utteranc.es/) for the comments, I had to make a few minor changes to the theme for the comments to work properly. While I was making changes to the theme, I also added configuration for a disclaimer page, which I felt was important.
 
 Something that I really appreciate about Hugo is the out-of-the-box RSS feed support. I want to share my content with others, and I think it's important that they are able to view it comfortably, so having an RSS feed for my blog was a must from the start.
