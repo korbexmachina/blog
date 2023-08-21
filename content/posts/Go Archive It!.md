@@ -42,6 +42,7 @@ Finally, the third requirement. This is more of a "Nice to have" than a need, bu
 I had heard that Go had great out of the box support for multithreading, as well as being easy to cross compile for multiple target operating systems. I also heard that it was very easy to learn, especially if you already know one or more _C-like_ languages. This was definitely my experience working on my first ever Go project; I went from zero to productive in just a few days of work.
 
 ---
+
 ## Development
 
 ### Runtime Configuration
@@ -115,6 +116,7 @@ type Config struct {
 ```
 
 ### Creating The Archives
+
 Actually creating the archives was pretty fun, and not too difficult thanks to the following _built-in_ libraries.
 
 ```go
@@ -176,6 +178,7 @@ brew install go-archive-it
 
 ---
 ## Conclusion
+
 Overall, I'm super happy with how this went, if I were to make any technical changes, there are a few places where I could have returned an error and passed it further up instead of just logging and exiting. For a while during the earlier stages of development, I wasn't returning errors from any of my functions, I eventually realized this was not the intended way to solve problems in Go, and did some rewrites to start passing the errors further up instead of exiting the program while inside private functions. This has been a super fun project so far, and I hope to continue developing it going forward. Some ideas I have for additional features are:
 
 1. The ability to set different retention values for each directory
