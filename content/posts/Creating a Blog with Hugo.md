@@ -4,7 +4,7 @@ slug: hugo-blog
 date: "2023-08-21"
 description: My experience creating my blog site with Hugo.
 ---
-## Why Hugo
+## Why Hugo?
 
 Honestly I kind of chose it on a whim. I was researching various static site generators, when I came across Hugo. Not only did it seem to fit my use case perfectly, it was written in my favourite language! After using Hugo for a while, I feel like I made the right choice. I have fought with it at times, but usually the answer was easy to find in the official documentation.
 
