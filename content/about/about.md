@@ -17,4 +17,3 @@ Now that we have the boring part out of the way, here's a few interesting facts 
 - I was the co-captain of an improv comedy team during my freshman year of college.
 - My favourite book is The Hobbit
 - I'm afraid of spiders
-- I love Go (the programming language)
