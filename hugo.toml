@@ -5,11 +5,6 @@ theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
-[sitemap]
-  changeFreq = 'daily'
-  filename = 'sitemap.xml'
-  priority = -1
-
 [params]
     brand = "Korben Tompkin"                      # name of your site - appears in the sidebar
     brand_image = "/images/slug.png"    # path to the image shown in the sidebar
@@ -33,14 +28,8 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     github_url = "https://github.com/korbexmachina"
     # gitlab_url = "https://gitlab.com"
     linkedin_url = "https://www.linkedin.com/in/korbentompkin/"
-    # twitter_url = "https://twitter.com"
     mastodon_url = "https://universeodon.com/@korbexmachina"
-    # tryhackme_url = "https://tryhackme.com"
-    # discord_url = "https://discord.com"
     # youtube_url = "https://youtube.com"
-    # instagram_url = "https://pixelfed.social/i/web/profile/577945488650438877"
-    # facebook_url = "https://facebook.com"
-    # flickr_url = "https://flickr.com"
     # telegram_url = "https://telegram.org"
     matrix_url = "https://matrix.to/#/@korbexmachina:matrix.org"
     # xmpp_url = "https://xmpp.org"
