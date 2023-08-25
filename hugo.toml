@@ -5,6 +5,11 @@ theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
+[sitemap]
+  changeFreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = -1
+
 [params]
     brand = "Korben Tompkin"                      # name of your site - appears in the sidebar
     brand_image = "/images/slug.png"    # path to the image shown in the sidebar
