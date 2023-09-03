@@ -31,7 +31,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     mastodon_url = "https://universeodon.com/@korbexmachina"
     # youtube_url = "https://youtube.com"
     # telegram_url = "https://telegram.org"
-    matrix_url = "https://matrix.to/#/@korbexmachina:matrix.org"
+    # matrix_url = "https://matrix.org"
     # xmpp_url = "https://xmpp.org"
     email_url = "mailto:contact@korbexmachina.com"
 
