@@ -2,7 +2,7 @@
 title: Too Much Configuration?
 slug: too-much-config
 date: "2023-09-04"
-description: A lightweight archive management utility written in Go.
+description: Is there such a thing as too much configuration?
 ---
 
 Is there such a thing as too much configuration?
