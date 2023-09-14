@@ -76,7 +76,8 @@ func ConfigExists(configPath string) {
                         log.Fatalf("Unable to write file: %v", err)
                 }
 
-                log.Printf("Config Created at %s, make any neccesary changes and run the program again", configPath)
+                log.Printf("Config Created at %s, make any neccesary changes and
+                run the program again", configPath)
                 os.Exit(0)
         }
 }
