@@ -51,35 +51,36 @@ The first thing I worked on was reading, writing, and validating the YAML config
 
 ```go
 func ConfigExists(configPath string) {
-        if _, err := os.Stat(configPath); os.IsNotExist(err) {
-                log.Print("creating config directory")
+    if _, err := os.Stat(configPath); os.IsNotExist(err) {
+        log.Print("creating config directory")
 
-                err := os.MkdirAll(filepath.Dir(configPath), os.ModePerm)
-                if err != nil {
-                        log.Fatalf("Unable to create directory: %v", err)
-                }
+            err := os.MkdirAll(filepath.Dir(configPath), os.ModePerm)
+            if err != nil {
+                log.Fatalf("Unable to create directory: %v", err)
+            }
 
-                config := Config{
-                        VaultPath: []string{"~/example", "~/directories"},
-                        ArchivePath: "~/archive",
-                        ArchiveType: 1,
-                        Retention: 10,
-                }
-
-                c, err := yaml.Marshal(config) // Serialize the struct
-                if err != nil {
-                        log.Fatalf("Failed to serialize data: %v", err)
-                }
-
-                err = ioutil.WriteFile(configPath, c, os.ModeAppend | 0664)
-                if err != nil {
-                        log.Fatalf("Unable to write file: %v", err)
-                }
-
-                log.Printf("Config Created at %s, make any neccesary changes and
-                run the program again", configPath)
-                os.Exit(0)
+    config := Config{
+        VaultPath: []string{"~/example", "~/directories"},
+               ArchivePath: "~/archive",
+               ArchiveType: 1,
+               Retention: 10,
         }
+
+        c, err := yaml.Marshal(config) // Serialize the struct
+            if err != nil {
+                log.Fatalf("Failed to serialize data: %v", err)
+            }
+
+        err = ioutil.WriteFile(
+        configPath, c, os.ModeAppend | 0664)
+            if err != nil {
+                log.Fatalf("Unable to write file: %v", err)
+            }
+
+        log.Printf("Config Created at %s, make any neccesary 
+        changes and run the program again", configPath)
+            os.Exit(0)
+    }
 }
 ```
 
@@ -109,10 +110,10 @@ A __Config__ is defined as follows, the rest of the function is pretty self expl
 
 ```go
 type Config struct {
-	VaultPath []string
-	ArchivePath string
-	ArchiveType uint8
-	Retention uint8
+    VaultPath []string
+        ArchivePath string
+        ArchiveType uint8
+        Retention uint8
 }
 ```
 
@@ -156,7 +157,12 @@ for _, path := range config.VaultPath {
     wg.Add(1)
         go func(path string) {
             defer wg.Done()
-                err := utils.Cleanup(filepath.Join(archivePath, filepath.Base(path)), config.Retention)
+
+                err := utils.Cleanup(
+                filepath.Join(archivePath, 
+                filepath.Base(path)), 
+                config.Retention)
+
                 if err != nil {
                     log.Fatalf("Failed to cleanup: %s", err)
                 }
