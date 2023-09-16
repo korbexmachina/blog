@@ -16,6 +16,6 @@ Now that we have the boring part out of the way, here's a few facts about me:
 - In my free time, I like to go mountain biking
 - I was the co-captain of an improv comedy team during my freshman year of college
 - I have a dog called Loki (feel free to contact me for cute pictures)
-- I'm ~~afraid of~~have a healthy respect for spiders
+- ~~I'm afraid of spiders~~ I have a healthy respect for spiders
 
 Thanks for checking out my little corner of the internet!
