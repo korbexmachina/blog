@@ -7,7 +7,7 @@ description: A brief rundown of the tools I use as a developer.
 
 I want to use this post to give my future self, and anyone else who might be interested, a look into what my developer toolkit looks like after my first year of college as a Computer Science major.
 
-![Picture of my termianl, split with tmux](/images/terminal.png)
+![Picture of my terminal, split with tmux](/images/terminal.png)
 
 ## What are the tools?
 

@@ -45,7 +45,7 @@ url  = "mailto:contact@korbexmachina.com"
 
 [[params.social]]
 name = "mastodon"
-url  = "https://universeodon.com/@korbexmachina"
+url  = "https://mstdn.social/@korbexmachina"
 
 [[params.social]]
 name = "linkedin"
