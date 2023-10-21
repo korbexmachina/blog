@@ -9,7 +9,7 @@ Hi there!
 
 I'm not sure how you ended up here, or what you might be interested in learning about me, but hopefully this is sufficient!
 
-My name is Korben, I'm 18 years old, and I'm currently studying computer science at UC Santa Cruz. I have a [GitHub](https://github.com/korbexmachina) if you are interested in my projects. If you would like to reach out, feel free to [email](mailto:contact@korbexmachina.com) me.
+My name is Korben, I'm 19 years old, and I'm currently studying computer science at UC Santa Cruz. I have a [GitHub](https://github.com/korbexmachina) if you are interested in my projects. If you would like to reach out, feel free to [email](mailto:contact@korbexmachina.com) me.
 
 Now that we have the boring part out of the way, here's a few facts about me:
 
