@@ -96,7 +96,6 @@ url        = "/posts"
 identifier = "about"
 name       = "About"
 url        = "/about"
-children   = ""
 
 [[menu.main]]
 identifier = "disclaimer"
