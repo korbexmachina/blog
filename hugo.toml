@@ -90,12 +90,13 @@ bottomText = [
 [[menu.main]]
 identifier = "blog"
 name       = "Blog"
-url        = "/posts"
+url        = "/posts" 
 
 [[menu.main]]
 identifier = "about"
 name       = "About"
 url        = "/about"
+children   = ""
 
 [[menu.main]]
 identifier = "disclaimer"
