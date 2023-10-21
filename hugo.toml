@@ -55,6 +55,10 @@ url  = "https://www.linkedin.com/in/korbentompkin/"
 name = "pixelfed"
 url  = "https://pixelfed.social/i/web/profile/577945488650438877"
 
+[[params.social]]
+name = "keybase"
+url  = "https://keybase.io/korbexmachina"
+
 [taxonomies]
 category = "blog"
 tag      = "tags"
