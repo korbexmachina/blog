@@ -6,7 +6,8 @@ readOtherPosts = "Read other posts"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 [author]
 name = "Korben Tompkin"
@@ -16,6 +17,9 @@ dateform        = "Jan 2, 2006"
 dateformShort   = "Jan 2"
 dateformNum     = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
+
+# Enable theme toggle
+enableThemeToggle = false
 
 # Subtitle for home
 homeSubtitle = "My technical blog."
