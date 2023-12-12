@@ -6,7 +6,7 @@ description: A lightweight archive management utility written in Go.
 ---
 ## Introduction
 
-[go-archive-it](https://github.com/korbexmachina/go-archive-it) is a lightweight archive management utility written in Go. The archive instructions are defined in a human readable `.yaml` file. The format as of the writing of this post (Subject to change until v0.1.0) is as follows:
+[go-archive-it](https://github.com/korbexmachina/go-archive-it) is a lightweight archive management utility written in Go. The archive instructions are defined in a human-readable `.yaml` file. The format as of the writing of this post (Subject to change until v0.1.0) is as follows:
 
 ```yaml
 vaultpath:
@@ -20,7 +20,7 @@ retention: 10
 
 Note: An absolute path can be provided in place of the _~_, otherwise it is automatically expanded to the user's home directory.
 
-This project began life as a python script called [archive-assistant](https://github.com/korbexmachina/archive-assistant) The goal of it's predecessor was primarily to maintain a rolling archive of my [Obsidian Vault](https://obsidian.md/), where I store my notes. 
+This project began life as a python script called [archive-assistant](https://github.com/korbexmachina/archive-assistant) The goal of its predecessor was primarily to maintain a rolling archive of my [Obsidian Vault](https://obsidian.md/), where I store my notes. 
 
 ### The Problem
 
@@ -39,7 +39,7 @@ The second requirement rules out python. Yes, I know there are ways to package p
 
 Finally, the third requirement. This is more of a "Nice to have" than a need, but if I was going to rewrite this tool, I wanted to do it right, and since it doesn't matter what order the directories finish archiving in, multithreading seemed like a no-brainer.
 
-I had heard that Go had great out of the box support for multithreading, as well as being easy to cross compile for multiple target operating systems. I also heard that it was very easy to learn, especially if you already know one or more _C-like_ languages. This was definitely my experience working on my first ever Go project; I went from zero to productive in just a few days of work.
+I had heard that Go had great out-of-the-box support for multithreading, as well as being easy to cross compile for multiple target operating systems. I also heard that it was very easy to learn, especially if you already know one or more _C-like_ languages. This was definitely my experience working on my first ever Go project; I went from zero to productive in just a few days of work.
 
 ---
 
@@ -84,7 +84,7 @@ func ConfigExists(configPath string) {
 }
 ```
 
-Starting at the top, the outer most _if_ statement checks if the path to the config file exists, if the path exists the function returns nothing and the program continues, otherwise any necessary path elements are created automatically, and the default values are written to the newly created `config.yaml` file. This was my first real encounter with Go error handling, I was pleasantly surprised by the way the language gently reminds you to handle errors in a logical way.
+Starting at the top, the outermost _if_ statement checks if the path to the config file exists, if the path exists the function returns nothing and the program continues, otherwise any necessary path elements are created automatically, and the default values are written to the newly created `config.yaml` file. This was my first real encounter with Go error handling, I was pleasantly surprised by the way the language gently reminds you to handle errors logically.
 
 I then wrote a short function to load the config file and return the data in a __Config__ struct.
 
@@ -106,7 +106,7 @@ func LoadConfig(configPath string) Config {
 }
 ```
 
-A __Config__ is defined as follows, the rest of the function is pretty self explanatory.
+A __Config__ is defined as follows, the rest of the function is pretty self-explanatory.
 
 ```go
 type Config struct {
@@ -126,7 +126,7 @@ Actually creating the archives was pretty fun, and not too difficult thanks to t
 "compress/gzip"
 ```
 
-In order to create the tar files I simply had to iterate through a directory structure and add each file using a tar writer. Most of the code I actually had to write for this was just making sure each operation happened in the correct order, and that all the possible errors were handled. the code for gzipping the `.tar` files was similar, and I was able to simply chain the two writers together in order to achieve the desired result.
+In order to create the tar files I simply had to iterate through a directory structure and add each file using a tar writer. Most of the code I actually had to write for this was just making sure each operation happened in the correct order, and that all the possible errors were handled. The code for gzipping the `.tar` files was similar, and I was able to simply chain the two writers together in order to achieve the desired result.
 
 `archive.go` has several helper functions for creating the archive, but only two exposed functions `Archive` and `Cleanup`
 
