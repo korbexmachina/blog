@@ -19,7 +19,7 @@ dateformNum     = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 
 # Enable theme toggle
-enableThemeToggle = false
+enableThemeToggle = true
 
 # Subtitle for home
 homeSubtitle = "My technical blog."
