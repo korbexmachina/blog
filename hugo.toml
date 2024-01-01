@@ -38,6 +38,11 @@ description = "My new homepage or blog"
 keywords = "homepage, blog"
 images = [""]
 
+# Set Author
+[[params.author]]
+name = "Korben Tompkin"
+email = "contact@korbexmachina.com"
+
 # Social icons
 [[params.social]]
 name = "github"
