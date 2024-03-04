@@ -2,7 +2,7 @@
 title: "Text Editors"
 date: 2024-03-04T14:01:03-08:00
 slug: "text-editors"
-draft: true
+draft: false
 ---
 
 # Text Editors
