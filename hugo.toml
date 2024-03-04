@@ -69,10 +69,10 @@ tag      = "tags"
 series   = "series"
 
 [params.logo]
-logoText = "Home"
+logoText = "Korbexmachina"
 logoHomeLink = "/"
 logoMark     = " "
-logoCursorDisabled = true
+logoCursorDisabled = false
 # logoCursorAnimate  = "0s"
 # logoCursorColor    = "#ffffff"
 # or
