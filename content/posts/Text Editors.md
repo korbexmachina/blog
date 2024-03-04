@@ -5,8 +5,6 @@ slug: "text-editors"
 draft: false
 ---
 
-# Text Editors
-
 I recently applied for an internship (I won't say where but I did link my blog on the cover letter, so if you are reading this, you know who you are.).
 In the job posting I noticed the following bullet point under __Desired Qualifications:__
 
